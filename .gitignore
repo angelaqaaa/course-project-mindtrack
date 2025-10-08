@@ -1,12 +1,67 @@
-directory_tree.txt
+# Maven
 target/
-.idea/
-.DS_Store
-homework-5-group/
-.DS_Store
-homework-5-group/
-README_CHECKLIST.md
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
 .idea/
 *.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Application-specific data files
 /daily_logs.json
 /feedback_cache.json
+/goals.txt
+/current_goals.txt
+/today_goal.txt
+daily_logs/
+
+# Documentation and temporary files
+directory_tree.txt
+README_CHECKLIST.md
+homework-5-group/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.#*
