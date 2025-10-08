@@ -50,10 +50,10 @@ Many people struggle to understand the connection between their daily activities
 
 ### **Tech Stack**
 - **Frontend**: Java Swing GUI with Clean Architecture
-- **Backend**: Java 11+ with Maven build management
+- **Backend**: Java 17 (compatible with Java 11+) with Maven build management
 - **Storage**: Local JSON file storage (no cloud sync)
-- **AI Integration**: OpenAI GPT API for pattern analysis
-- **Architecture**: Clean Architecture with SOLID principles
+- **AI Integration**: OpenAI GPT-4o-mini API for pattern analysis
+- **Architecture**: Clean Architecture with SOLID principles (4 layers: Entity, Use Case, Interface Adapter, View)
 
 ---
 
@@ -130,8 +130,8 @@ Many people struggle to understand the connection between their daily activities
 
 ### **Step 1: Clone the Repository**
 ```bash
-git clone https://github.com/lininnin/csc207-proj.git
-cd csc207-proj
+git clone https://github.com/angelaqaaa/course-project-mindtrack.git
+cd course-project-mindtrack
 ```
 
 ### **Step 2: Install Dependencies**
@@ -149,10 +149,10 @@ For AI analysis features, set environment variable:
 # Set OpenAI API key as environment variable
 export OPENAI_API_KEY=your-openai-api-key-here
 
-# Or set system property when running
-mvn exec:java -Dexec.mainClass="app.RunApp" -DOPENAI_API_KEY=your-key
+# Then run the application
+mvn exec:java -Dexec.mainClass="app.RunApp"
 
-# Alternative: Set as JVM system property
+# Alternative: Set inline with run command
 OPENAI_API_KEY=your-key mvn exec:java -Dexec.mainClass="app.RunApp"
 ```
 
@@ -301,7 +301,7 @@ MindTrack integrates with OpenAI's API for wellness pattern analysis:
 #### **Configuration**
 1. **Obtain API Key**: Register at [OpenAI Platform](https://platform.openai.com/)
 2. **Set Environment Variable**: `export OPENAI_API_KEY=your-key`
-3. **Set Usage Limits**: API calls limited to once per week per user
+3. **Usage Limits**: Analysis generation limited to once per week (automatic Monday midnight EST + manual trigger)
 
 #### **Analysis Workflow**
 1. **General Analysis**: Comprehensive wellness/productivity analysis of weekly data
@@ -355,7 +355,7 @@ While this is primarily an educational project, we welcome contributions that en
 6. **Submit Pull Request**: With clear description
 
 #### **Code Review Process**
-- **Automated Checks**: CI/CD pipeline runs tests and quality checks
+- **Local Testing**: Run `mvn test` before submitting pull requests (99.8% pass rate expected)
 - **Peer Review**: At least one team member reviews changes
 - **Architecture Review**: Ensure Clean Architecture compliance
 - **Documentation Review**: Verify documentation accuracy
@@ -379,21 +379,20 @@ We value your feedback to improve MindTrack and enhance the learning experience:
 ### **How to Provide Feedback**
 
 #### **Bug Reports**
-- **GitHub Issues**: [Create issue reports here](https://github.com/lininnin/csc207-proj/issues) with:
+- **GitHub Issues**: [Create issue reports here](https://github.com/angelaqaaa/course-project-mindtrack/issues) with:
   - Steps to reproduce the problem
   - Expected vs actual behavior  
   - System information (OS, Java version)
   - Screenshots if applicable
 
 #### **Feature Requests**
-- **GitHub Discussions**: [Propose new features here](https://github.com/lininnin/csc207-proj/discussions) with:
+- **GitHub Discussions**: [Propose new features here](https://github.com/angelaqaaa/course-project-mindtrack/discussions) with:
   - Clear use case description
   - Benefits and justification
   - Implementation considerations
   - Alignment with Clean Architecture principles
 
 #### **General Feedback**
-- **Email**: Contact team members directly for course-related feedback
 - **Peer Review**: Provide code review feedback on pull requests
 - **Documentation**: Suggest improvements to README and documentation
 
@@ -404,10 +403,7 @@ We value your feedback to improve MindTrack and enhance the learning experience:
 - **Be Respectful**: Maintain professional and collaborative tone
 
 ### **Response Expectations**
-- **Bug Reports**: Response within 3-5 business days
-- **Feature Requests**: Evaluation within 1-2 weeks
-- **Pull Requests**: Review within 1 week
-- **General Questions**: Response within 2-3 business days
+**Note:** As this is a completed academic project (CSC207, Fall 2024), active development has concluded. However, we welcome feedback and learning-oriented contributions from the community.
 
 ---
 
