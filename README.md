@@ -355,7 +355,7 @@ While this is primarily an educational project, we welcome contributions that en
 6. **Submit Pull Request**: With clear description
 
 #### **Code Review Process**
-- **Local Testing**: Run `mvn test` before submitting pull requests (99.8% pass rate expected)
+- **Local Testing**: Run `mvn test` before submitting pull requests
 - **Peer Review**: At least one team member reviews changes
 - **Architecture Review**: Ensure Clean Architecture compliance
 - **Documentation Review**: Verify documentation accuracy
@@ -403,7 +403,7 @@ We value your feedback to improve MindTrack and enhance the learning experience:
 - **Be Respectful**: Maintain professional and collaborative tone
 
 ### **Response Expectations**
-**Note:** As this is a completed academic project (CSC207, Fall 2024), active development has concluded. However, we welcome feedback and learning-oriented contributions from the community.
+**Note:** As this is a completed academic project (CSC207, Summer 2025), active development has concluded. However, we welcome feedback and learning-oriented contributions from the community.
 
 ---
 
